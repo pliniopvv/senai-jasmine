@@ -13,4 +13,12 @@ describe('CalculadoraService', () => {
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
+
+  it('should sub return subtract correct value', () => {
+    const num1 = 5;
+    const num2 = 5;
+    const result = service.sub(num1, num2);
+    expect(result).toEqual(0);
+  });
+
 });
