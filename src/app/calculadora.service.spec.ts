@@ -21,4 +21,11 @@ describe('CalculadoraService', () => {
     expect(result).toEqual(0);
   });
 
+  it('should mul return multiplication correct value', () => {
+    const num1 = 5;
+    const num2 = 5;
+    const result = service.mul(num1, num2);
+    expect(result).toEqual(25);
+  });
+
 });
