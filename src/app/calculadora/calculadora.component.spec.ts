@@ -10,7 +10,7 @@ describe('CalculadoraComponent', () => {
     await TestBed.configureTestingModule({
       imports: [CalculadoraComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(CalculadoraComponent);
     component = fixture.componentInstance;
@@ -20,6 +20,14 @@ describe('CalculadoraComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should sum correct value', () => {
+    component.num1 = 5;
+    component.num2 = 5;
+    component.sum();
+    expect(component.result).toEqual(10);
+  });
+
 
 
 });
